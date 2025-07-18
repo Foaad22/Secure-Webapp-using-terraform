@@ -24,8 +24,8 @@ resource "aws_instance" "reverse_proxy" {
     host        = self.public_ip
   }
 
-   provisioner "local-exec" {
-    command = "echo public ip is: ${self.public_ip} >> all_ips.txt"
+  provisioner "local-exec" {
+    command = "echo public ip for ${var.name} is: ${self.public_ip} >> all_ips.txt"
   }
 
   provisioner "remote-exec" {

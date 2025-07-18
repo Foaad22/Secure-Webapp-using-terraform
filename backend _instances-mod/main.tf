@@ -30,10 +30,14 @@ resource "aws_instance" "apache" {
     }
   }
 
+  provisioner "local-exec" {
+    command = "echo public ip for ${var.name} is: ${self.private_ip} >> all_ips.txt"
+  }
+
   provisioner "remote-exec" {
     inline = [
       "sudo yum install -y httpd",
-      "echo 'hello from backend' | sudo tee /var/www/html/index.html",
+      "echo 'hello from backend website' | sudo tee /var/www/html/index.html",
       "sudo systemctl enable --now httpd"
     ]
 
@@ -46,5 +50,8 @@ resource "aws_instance" "apache" {
       bastion_user        = "ec2-user"
       bastion_private_key = file(var.bastion_private_key_path)
     }
+  }
+  tags = {
+    Name = var.name
   }
 }

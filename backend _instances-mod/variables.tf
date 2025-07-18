@@ -11,3 +11,5 @@ variable "bastion_private_key_path" {
   description = "Path to the private key for SSH via bastion"
   type        = string
 }
+
+
