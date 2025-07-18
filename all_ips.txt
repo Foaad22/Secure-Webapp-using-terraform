@@ -1,4 +1,4 @@
-public ip for proxy-2 is: 54.158.5.189
-public ip for proxy-1 is: 3.95.169.47
-public ip for backend-apache-2 is: 10.0.3.239
-public ip for backend-apache-1 is: 10.0.1.139
+public ip for proxy-2 is: 52.91.2.112
+public ip for proxy-1 is: 34.227.22.25
+private ip for backend-apache-2 is: 10.0.3.144
+private ip for backend-apache-1 is: 10.0.1.93

@@ -31,7 +31,7 @@ resource "aws_instance" "apache" {
   }
 
   provisioner "local-exec" {
-    command = "echo public ip for ${var.name} is: ${self.private_ip} >> all_ips.txt"
+    command = "echo private ip for ${var.name} is: ${self.private_ip} >> all_ips.txt"
   }
 
   provisioner "remote-exec" {
