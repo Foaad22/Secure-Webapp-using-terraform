@@ -50,9 +50,6 @@ You should see:
 
 Hello from backend website
 
-<img width="1685" height="910" alt="image" src="https://github.com/user-attachments/assets/e885babe-4935-4e38-aaad-8774e2040c75" />
-<img width="1319" height="502" alt="image" src="https://github.com/user-attachments/assets/a2adb816-97b5-431d-ad35-9623b006b2b5" />
-
 
 
 🛠️ Customization
@@ -67,6 +64,9 @@ AMIs
 Security group rules
 
 Nginx proxy configuration
+
+👤 Author
+@Foaad22
 
 
 
