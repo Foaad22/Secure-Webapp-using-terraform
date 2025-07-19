@@ -33,7 +33,7 @@ This project provisions a complete **secure web application infrastructure** on 
 ## 🚀 How to Deploy
 
 ```bash
-git clone https://github.com/yourusername/Secure-Webapp-using-terraform.git
+git clone https://github.com/Foaad22/Secure-Webapp-using-terraform.git
 cd Secure-Webapp-using-terraform
 terraform init
 terraform plan
